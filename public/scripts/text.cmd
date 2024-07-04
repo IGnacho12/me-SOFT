@@ -23,12 +23,6 @@ if "%Edition%"=="Microsoft Windows 10 Education" set ProductKey=NW6C2-QMPVW-D7KK
 if "%Edition%"=="Microsoft Windows 10 Education N" set ProductKey=2WH4N-8QGBV-H22JP-CT43Q-MDWWJ
 if "%Edition%"=="Microsoft Windows 10 Enterprise 2015 LTSB" set ProductKey=M7XTQ-FN8P6-TTKYV-9D4CC-J462D
 
-:: Verifica si se encontró una clave de producto
-if "%ProductKey%"=="" (
-    echo No se pudo determinar la clave de producto para la edicion: %Edition%
-    exit /b 1
-)
-
 :: Ejecuta los comandos slmgr con la clave de producto
 echo Ejecutando comandos de activacion para la edicion: %Edition%
 slmgr /ipk %ProductKey%
@@ -36,4 +30,5 @@ slmgr /skms kms.digiboy.ir
 slmgr /ato
 
 echo Activacion completada.
+start cmd /k echo Activación completada. Acepte todas las ventanas y espere unos segundos :D
 endlocal
