@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Donwload from "../components/Donwload.astro";
+---
+
+<Layout title="Utilidades par juegos">
+  <main>
+    <h1><span>Utilidades</span></h1>
+    <article>
+      <h3>Menor latencia</h3>
+      <p class=" text-slate-300 italic mt-4">
+        Timer Resolution es una herramienta que ajusta la precisión del
+        temporizador del sistema en Windows. Al hacer que el temporizador del sistema sea
+        más preciso, se pueden obtener actualizaciones más rápidas y fluidas.
+      </p>
+    </article>
+    <Donwload href="utilidades/TimerResolution.exe" text="Timer Resolution" donwload="Timer resolution.exe">
+      
+    </article>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+</style>

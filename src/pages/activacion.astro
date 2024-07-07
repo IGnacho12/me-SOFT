@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Download from "../components/Donwload.astro";
 ---
 
 <Layout title="Activadores">
@@ -16,17 +17,14 @@ import Layout from "../layouts/Layout.astro";
       </h3>
       <img class="size-10 flex self-center pb-1" src="/command.svg" alt="" />
     </article>
-    <a
+
+    <Download
       href="scripts/activate-win-office.7z"
-      download="Activación de windows y office.7z"
-      ><h3
-        id="script"
-        class="transition-all inline-flex items-center justify-center text-base p-2 font-medium text-gray-500 rounded-lg dark:bg-gray-800 hover:bg-transparent hover:text-purple-500"
-      >
-        Activación de windows y office.7z
-      </h3></a
-    >
-    <p>¡Descarga el comprimido, extraelo y listo!</p>
+      text="Activación de windows y office.7z"
+      donwload="Activación de windows y office.7z"
+    />
+
+    <p>¡Extraelo, executalo y listo!</p>
     <!-- TXT -->
     <h1 class="mt-8"><span>Windows</span></h1>
     <h3
@@ -82,16 +80,8 @@ import Layout from "../layouts/Layout.astro";
       </h3>
       <img class="size-10 flex self-center pb-1" src="/command.svg" alt="" />
     </article>
-    <a
-      href="scripts/text.7z"
-      download="text.7z"
-      ><h3
-        id="script"
-        class="transition-all inline-flex items-center justify-center text-base p-2 font-medium text-gray-500 rounded-lg dark:bg-gray-800 hover:bg-transparent hover:text-purple-500"
-      >
-        script texto
-      </h3></a
-    ><div class="h-52"></div>
+    <Download href="scripts/text.7z" text="script texto" donwload="text.7z" />
+    <div class="h-52"></div>
   </main>
 </Layout>
 <style>

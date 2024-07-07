@@ -1,0 +1,44 @@
+---
+interface Props {
+  href: string;
+  text: string;
+  donwload: string;
+}
+const { href, donwload, text  } = Astro.props;
+---
+
+<article>
+  <a
+    href={href}
+    download={donwload}
+  >
+    {text}
+  </a>
+</article>
+
+<style>
+  a {
+    display: inline-flex;
+    font-style: italic;
+    padding: 0.5rem;
+    justify-content: center;
+    place-self: center;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: #6b7280;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+    background-color: #1F2937;
+
+    &&:hover {
+      color: #8b5cf6;
+      background-color: transparent;
+    }
+  }
+</style>
