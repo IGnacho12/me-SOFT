@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Donwload from "../components/Donwload.astro";
 ---
 
 <Layout title="Utilidades par juegos">
@@ -8,22 +7,37 @@ import Donwload from "../components/Donwload.astro";
     <h1><span>Utilidades</span></h1>
     <article>
       <h3>Menor latencia</h3>
-      <p class="text-slate-300 italic mt-4">
+      <p>
         Timer Resolution es una herramienta que ajusta la precisión del
         temporizador del sistema en Windows. Al hacer que el temporizador del
         sistema sea más preciso, se pueden obtener actualizaciones más rápidas y
         fluidas.
       </p>
     </article>
-    <Donwload
-      href="utilidades/TimerResolution.exe"
-      text="Timer Resolution"
-      donwload="Timer resolution.exe"
+    <div class="flex flex-row gap-2 mt-3">
+      <img src="timer.jpg" alt="Timer resolution.jpg" class="size-8" />
+      <a id="neon" href="">Timer Resolution</a>
+    </div>
+    <p>Una vez en exejución el programa debes darle click a "Maximum"</p>
+    <img
+      class="w-[80%] mt-5 aspect-video"
+      src="timerWindows.jpg"
+      alt="Ventana de ayuda para timer resolution"
+    />
+    <p>
+      Si te parece tedioso tener que ejecutar este programa cada vez que tu PC
+      se inicie hay una alternativa de exejución automática que además no se
+      ubica en la barra de tareas si no que se pone en la bandeja del sistema
+    </p>
+    <div class="flex flex-row gap-2 mt-3">
+      <img
+        src="timerTool.png"
+        alt="Timer tool ico"
+        class="size-8"
       />
-      <div class="flex flex-row gap-2">
-        <img src="timer.jpg" alt="Timer resolution.jpg" class="size-8" />
-        <a id="neon" href="" >Timer Resolution</a>
-      </div>
+      <a id="neon" href="utilidades/timerTool.rar">TimerTool.rar</a>
+    </div>
+    <div class="h-36"></div>
   </main>
 </Layout>
 
@@ -41,8 +55,16 @@ import Donwload from "../components/Donwload.astro";
     font-size: 20px;
     line-height: 1.6;
   }
+  p {
+    margin-top: 1rem;
+    font-style: italic;
+    color: rgb(203 213 225);
+  }
   #neon {
-    font-style: ;
-    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.4),0px 0px 10px rgba(255, 255, 255, 0.4),0px 0px 15px rgba(255, 255, 255, 0.4),0px 0px 30px rgba(255, 255, 255, 0.4);
+    text-shadow:
+      0 0 5px rgba(255, 255, 255, 0.4),
+      0 0 10px rgba(255, 255, 255, 0.4),
+      0 0 15px rgba(255, 255, 255, 0.4),
+      0 0 25px rgba(255, 255, 255, 0.4);
   }
 </style>
