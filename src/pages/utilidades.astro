@@ -8,20 +8,31 @@ import Donwload from "../components/Donwload.astro";
     <h1><span>Utilidades</span></h1>
     <article>
       <h3>Menor latencia</h3>
-      <p class=" text-slate-300 italic mt-4">
+      <p class="text-slate-300 italic mt-4">
         Timer Resolution es una herramienta que ajusta la precisión del
-        temporizador del sistema en Windows. Al hacer que el temporizador del sistema sea
-        más preciso, se pueden obtener actualizaciones más rápidas y fluidas.
+        temporizador del sistema en Windows. Al hacer que el temporizador del
+        sistema sea más preciso, se pueden obtener actualizaciones más rápidas y
+        fluidas.
       </p>
     </article>
-    <Donwload href="utilidades/TimerResolution.exe" text="Timer Resolution" donwload="Timer resolution.exe">
-      
-    </article>
+    <Donwload
+      href="utilidades/TimerResolution.exe"
+      text="Timer Resolution"
+      donwload="Timer resolution.exe"
+      />
+      <div class="flex flex-row gap-2">
+        <img src="timer.jpg" alt="Timer resolution.jpg" class="size-8" />
+        <a id="neon" href="" >Timer Resolution</a>
+      </div>
   </main>
 </Layout>
 
 <style>
+  body {
+    height: 100%;
+  }
   main {
+    height: 100%;
     margin: auto;
     padding: 1rem;
     width: 800px;
@@ -29,5 +40,9 @@ import Donwload from "../components/Donwload.astro";
     color: white;
     font-size: 20px;
     line-height: 1.6;
+  }
+  #neon {
+    font-style: ;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.4),0px 0px 10px rgba(255, 255, 255, 0.4),0px 0px 15px rgba(255, 255, 255, 0.4),0px 0px 30px rgba(255, 255, 255, 0.4);
   }
 </style>
