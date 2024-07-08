@@ -2,9 +2,10 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Utilidades par juegos">
+<Layout title="Utilidades para juegos">
   <main>
     <h1><span>Utilidades</span></h1>
+    <!-- Timer Resolution -->
     <article>
       <h3>Menor latencia</h3>
       <p>
@@ -13,58 +14,86 @@ import Layout from "../layouts/Layout.astro";
         sistema sea más preciso, se pueden obtener actualizaciones más rápidas y
         fluidas.
       </p>
-    </article>
-    <div class="flex flex-row gap-2 mt-3">
-      <img src="timer.jpg" alt="Timer resolution.jpg" class="size-8" />
-      <a id="neon" href="">Timer Resolution</a>
-    </div>
-    <p>Una vez en exejución el programa debes darle click a "Maximum"</p>
-    <img
-      class="w-[80%] mt-5 aspect-video"
-      src="timerWindows.jpg"
-      alt="Ventana de ayuda para timer resolution"
-    />
-    <p>
-      Si te parece tedioso tener que ejecutar este programa cada vez que tu PC
-      se inicie hay una alternativa de exejución automática que además no se
-      ubica en la barra de tareas si no que se pone en la bandeja del sistema
-    </p>
-    <div class="flex flex-row gap-2 mt-3">
-      <img
-        src="timerTool.png"
-        alt="Timer tool ico"
-        class="size-8"
-      />
-      <a id="neon" href="utilidades/timerTool.rar">TimerTool.rar</a>
-    </div>
-    <div class="h-36"></div>
-  </main>
-</Layout>
 
-<style>
-  body {
-    height: 100%;
-  }
-  main {
-    height: 100%;
-    margin: auto;
-    padding: 1rem;
-    width: 800px;
-    max-width: calc(100% - 2rem);
-    color: white;
-    font-size: 20px;
-    line-height: 1.6;
-  }
-  p {
-    margin-top: 1rem;
-    font-style: italic;
-    color: rgb(203 213 225);
-  }
-  #neon {
-    text-shadow:
-      0 0 5px rgba(255, 255, 255, 0.4),
-      0 0 10px rgba(255, 255, 255, 0.4),
-      0 0 15px rgba(255, 255, 255, 0.4),
-      0 0 25px rgba(255, 255, 255, 0.4);
-  }
-</style>
+      <div class="flex flex-row gap-2 mt-3">
+        <img src="timer.jpg" alt="Timer resolution.jpg" class="size-8" />
+        <a id="neon" href="">Timer Resolution</a>
+      </div>
+      <p>Una vez en exejución el programa debes darle click a "Maximum"</p>
+      <img
+        class="w-[80%] mt-5 aspect-video"
+        src="timerWindows.jpg"
+        alt="Ventana de ayuda para timer resolution"
+      />
+      <p>
+        Si te parece tedioso tener que ejecutar este programa cada vez que tu PC
+        se inicie hay una alternativa de exejución automática que además no se
+        ubica en la barra de tareas si no que se pone en la bandeja del sistema
+      </p>
+      <div class="flex flex-row gap-2 mt-3">
+        <img src="timerTool.png" alt="Timer tool ico" class="size-8" />
+        <a id="neon" href="utilidades/timerTool.rar">TimerTool.rar</a>
+      </div>
+    </article>
+
+    <!-- Resolución de pantalla HZ -->
+    <article class="mt-24">
+      <h3>Desbloquear HZ & Resolución personalizada</h3>
+      <p>
+        Las pantallas suelen funcionar a una frecuencia de refresco estable,
+        generalmente de 60 Hz para la mayoría de los monitores. Sin embargo, es
+        posible realizar un overclocking para aumentar esta frecuencia. Los
+        monitores de 60 Hz pueden, a menudo, ser llevados a 75 Hz. Hay dos
+        maneras de lograr esto: ajustando la resolución en la configuración de
+        Windows o utilizando un programa para establecer resoluciones
+        personalizadas y seleccionar la frecuencia de refresco deseada.
+      </p>
+      <div class="flex flex-row gap-2 mt-3">
+        <img src="cruLogo.png" alt="cru logo" class="size-8" />
+        <a class="mb-8" id="neon" href="utilidades/cru.zip">CRU.zip</a>
+      </div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/DIwHUM31M3Q?si=LEv7XqXbfNuuf5Aw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </article>
+
+    <!-- Colores más fuertes -->
+    <article class="mt-24">
+      <h3>Colores más vividos</h3>
+      <p>
+        VibranceGUI es una aplicación que automatiza el Control de Vibración Digital de NVIDIA y la Saturación de AMD para mejorar la experiencia de juego con imágenes más coloridas.
+      </p>
+      <div class="flex flex-row gap-2 mt-3">
+        <img src="vibranceLogo.png" alt="vibrance gui logo" class="size-8">
+        <a id="neon" download="vibrance GUI.exe" href="utilidades/vibranceGui.exe">VibranceGui.exe</a>
+      </div>
+    </article>
+  </main>
+  <div class="h-36"></div>
+
+  <style>
+    body {
+      height: 100%;
+    }
+    main {
+      height: 100%;
+      margin: auto;
+      padding: 1rem;
+      width: 800px;
+      max-width: calc(100% - 2rem);
+      color: white;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+    p {
+      margin-top: 1rem;
+      font-style: italic;
+      color: rgb(203 213 225);
+    }
+    #neon {
+      text-shadow:
+        0 0 5px rgba(255, 255, 255, 0.4),
+        0 0 10px rgba(255, 255, 255, 0.4),
+        0 0 15px rgba(255, 255, 255, 0.4),
+        0 0 25px rgba(255, 255, 255, 0.4);
+    }
+  </style>
+</Layout>
