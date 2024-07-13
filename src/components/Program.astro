@@ -1,0 +1,43 @@
+---
+interface Props {
+  img: string;
+  href: string;
+}
+const { img, href } = Astro.props;
+---
+
+<div class="flex flex-row gap-5 items-center">
+  <img src={img} alt="img" />
+  <a href={href}><slot /></a>
+</div>
+
+<style>
+  a {
+    transition: all;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    display: flex;
+    flex-direction: row;
+
+    text-shadow:
+      0 0 5px rgba(255, 255, 255, 0.2),
+      0 0 10px rgba(255, 255, 255, 0.2),
+      0 0 15px rgba(255, 255, 255, 0.2),
+      0 0 25px rgba(255, 255, 255, 0.2);
+
+    &&:hover {
+      text-shadow:
+        0 0 5px rgba(255, 255, 255, 0.4),
+        0 0 10px rgba(255, 255, 255, 0.4),
+        0 0 15px rgba(255, 255, 255, 0.4),
+        0 0 25px rgba(255, 255, 255, 0.4);
+    }
+  }
+  img {
+    position: absolute;
+    right: 680px;
+
+    aspect-ratio: 1/1;
+    size: 32px;
+  }
+</style>

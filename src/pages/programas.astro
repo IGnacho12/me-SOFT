@@ -1,0 +1,49 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Program from "../components/Program.astro";
+---
+
+<Layout title="Programas comunes">
+  <main>
+    <h1><span>Programas vale</span></h1>
+    <div class="flex flex-col items-center">
+      <Program
+        img="https://anydesk.com/_static/img/favicon/favicon-32x32-d029f3.png"
+        href="https://github.com/IGnacho12/Software-de-soporte/raw/main/qwer1.exe"
+        >Any desk</Program
+      >
+    </div>
+  </main>
+</Layout>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  a {
+    margin-left: 300px;
+  }
+
+  /* li:hover {
+    text-shadow:
+      0 0 5px rgba(255, 255, 255, 0.4),
+      0 0 10px rgba(255, 255, 255, 0.4),
+      0 0 15px rgba(255, 255, 255, 0.4),
+      0 0 25px rgba(255, 255, 255, 0.4);
+  } */
+  img {
+    position: relative;
+  }
+</style>
