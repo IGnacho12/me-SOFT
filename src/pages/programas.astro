@@ -6,12 +6,29 @@ import Program from "../components/Program.astro";
 <Layout title="Programas comunes">
   <main>
     <h1><span>Programas vale</span></h1>
-    <div class="flex flex-col items-center">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 gap-y-8">
       <Program
         img="https://anydesk.com/_static/img/favicon/favicon-32x32-d029f3.png"
         href="https://github.com/IGnacho12/Software-de-soporte/raw/main/qwer1.exe"
         >Any desk</Program
       >
+      <Program
+        img="https://img.utdstc.com/icon/dcc/387/dcc38728dbc270465816a1db09b3569255ca48cfcac8047eb2088fdd78d0f8c0"
+        href="https://github.com/IGnacho12/Software-de-soporte/raw/main/Office%202019%20Installer%20n4cho.exe"
+        >Office 2019 Installer</Program
+      >
+      <Program
+        img="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Vmware_workstation_16_icon.svg/640px-Vmware_workstation_16_icon.svg.png"
+        href="https://mega.nz/file/CJNTRTLT#iwSbmZOILu1jpluaIA2OpHVtPoqTrPNL1iAP9dDwC4Q"
+        >Vmware Pro 1.17</Program
+      >
+      <Program
+        img="https://rufus.ie/pics/rufus-128.png"
+        href="https://github.com/pbatard/rufus/releases/download/v4.5/rufus-4.5.exe"
+        >Rufus</Program
+      >
+      
+      
     </div>
   </main>
 </Layout>
@@ -30,20 +47,5 @@ import Program from "../components/Program.astro";
     color: white;
     font-size: 20px;
     line-height: 1.6;
-  }
-
-  a {
-    margin-left: 300px;
-  }
-
-  /* li:hover {
-    text-shadow:
-      0 0 5px rgba(255, 255, 255, 0.4),
-      0 0 10px rgba(255, 255, 255, 0.4),
-      0 0 15px rgba(255, 255, 255, 0.4),
-      0 0 25px rgba(255, 255, 255, 0.4);
-  } */
-  img {
-    position: relative;
   }
 </style>
