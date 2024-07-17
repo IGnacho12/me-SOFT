@@ -21,6 +21,7 @@ import Layout from "../layouts/Layout.astro";
     </div>
     <p>Una vez en exejución el programa debes darle click a "Maximum"</p>
     <img
+      id="imgDemostracion"
       class="w-[80%] mt-5 aspect-video"
       src="timerWindows.jpg"
       alt="Ventana de ayuda para timer resolution"
@@ -31,11 +32,7 @@ import Layout from "../layouts/Layout.astro";
       ubica en la barra de tareas si no que se pone en la bandeja del sistema
     </p>
     <div class="flex flex-row gap-2 mt-3">
-      <img
-        src="timerTool.png"
-        alt="Timer tool ico"
-        class="size-8"
-      />
+      <img src="timerTool.png" alt="Timer tool ico" class="size-8" />
       <a id="neon" href="utilidades/timerTool.rar">TimerTool.rar</a>
     </div>
 
@@ -55,18 +52,37 @@ import Layout from "../layouts/Layout.astro";
         <img src="cruLogo.png" alt="cru logo" class="size-8" />
         <a class="mb-8" id="neon" href="utilidades/cru.zip">CRU.zip</a>
       </div>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/DIwHUM31M3Q?si=LEv7XqXbfNuuf5Aw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/DIwHUM31M3Q?si=LEv7XqXbfNuuf5Aw"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
     </article>
 
     <!-- Colores más fuertes -->
     <article class="mt-24">
       <h3>Colores más vividos</h3>
       <p>
-        VibranceGUI es una aplicación que automatiza el Control de Vibración Digital de NVIDIA y la Saturación de AMD para mejorar la experiencia de juego con imágenes más coloridas.
+        VibranceGUI es una aplicación que automatiza el Control de Vibración
+        Digital de NVIDIA y la Saturación de AMD para mejorar la experiencia de
+        juego con imágenes más coloridas.
       </p>
       <div class="flex flex-row gap-2 mt-3">
-        <img src="vibranceLogo.png" alt="vibrance gui logo" class="size-8">
-        <a id="neon" download="vibrance GUI.exe" href="utilidades/vibranceGui.exe">VibranceGui.exe</a>
+        <img
+          id="donwloadImg"
+          src="vibranceLogo.png"
+          alt="vibrance gui logo"
+          class="size-8"
+        />
+        <a
+          id="neon"
+          download="vibrance GUI.exe"
+          href="utilidades/vibranceGui.exe">VibranceGui.exe</a
+        >
       </div>
     </article>
   </main>
@@ -97,6 +113,29 @@ import Layout from "../layouts/Layout.astro";
         0 0 10px rgba(255, 255, 255, 0.4),
         0 0 15px rgba(255, 255, 255, 0.4),
         0 0 25px rgba(255, 255, 255, 0.4);
+    }
+
+    /* Tamaño de fuente si esta en celular */
+    @media (max-width: 400px) {
+      p {
+        font-size: 16px;
+      }
+      h3 {
+        font-size: 26px;
+      }
+      #neon {
+        font-size: 16px;
+      }
+
+      img {
+        height: 22px;
+        width: 22px;
+      }
+
+      #imgDemostracion {
+        width: 80%;
+        height: auto;
+      }
     }
   </style>
 </Layout>
