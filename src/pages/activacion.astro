@@ -6,16 +6,19 @@ import Download from "../components/Donwload.astro";
 <Layout title="Activadores">
   <main>
     <h1>
-      <span> WINDOWS & OFFICE</span>
+      <span>WINDOWS & OFFICE</span>
     </h1>
+
     <!-- SCRIPT  -->
     <article class="flex">
       <h3
         class="inline-block text-4xl text-gray-300 border-dashed border-b-4 italic mb-4 mr-2"
       >
-        Mediante un script
+        Script de <a
+          href="https://github.com/massgravel/Microsoft-Activation-Scripts"
+          target="_blank">massgravel</a
+        >
       </h3>
-      <img class="size-10 flex self-center pb-1" src="/command.svg" alt="" />
     </article>
 
     <Download
@@ -54,33 +57,34 @@ import Download from "../components/Donwload.astro";
 </code>
 </pre>
     <h3
-      class="inline-block text-2xl text-gray-300 border-dashed border-b-4 italic mb-4"
+      class="inline-block text-2xl text-gray-300 border-dashed border-b-4  mb-4"
     >
       Instrucciones ⬇
     </h3>
     <ul class="mb-8">
       <li>
-        <p class="flex">
-          Presiona la tecla Win <img class="mx-1" src="/windows.svg" alt="" />
-          Posterior a esto buscar el apartado "Acerca de tu pc"
-        </p>
+        Presiona la tecla Win en tu teclado
       </li>
       <li>
-        <p>
-          Ubica que edición de windows es la que cuentas y en base a eso sigue a
-          cabo los comandos mencionados
-        </p>
+        Escribe "Acerca de tu PC" y selecciona la opción que aparezca
+      </li>
+      <li>
+        En la ventana que se abre, busca la sección "Especificaciones de Windows" -> "Edición"
+      </li>
+      <li>En base a esa versión, realiza el primer comando sustituyendo el número de activación por los astericos</li>
+      <li>
+        Luego ejecuta los demás comandos
       </li>
     </ul>
-    <article class="flex">
+    <article class="">
       <h3
         class="inline-block text-4xl text-gray-300 border-dashed border-b-4 italic mb-4 mr-2"
       >
         Script basado en el texto
       </h3>
-      <img class="size-10 flex self-center pb-1" src="/command.svg" alt="" />
+      <p>Puedes ejecutar el siguiente script y realizara los pasos manuales mecionados arriba de manera automática</p>
     </article>
-    <Download href="scripts/text.7z" text="script texto" donwload="text.7z" />
+    <Download href="scripts/text.7z" text="Script.7z" donwload="Script.7z" />
     <div class="h-52"></div>
   </main>
 </Layout>
