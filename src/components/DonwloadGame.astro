@@ -1,0 +1,53 @@
+---
+interface Props {
+  img: string;
+  href: string;
+  description: string;
+}
+const { img, href, description} = Astro.props;
+---
+
+<div class="flex flex-row items-cente mb-12">
+  <img src={img} alt="img" />
+
+  <div class="flex flex-col justify-between w-full h-full ml-6" id="hola">
+    <a download href={href}><slot /></a>
+    <p class="mb-2">
+      {description}
+    </p>
+  </div>
+
+</div>
+
+<style>
+  a {
+    font-family: sans-serif;
+    transition: all;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    display: flex;
+    flex-direction: row;
+    font-size: 32px;
+
+    text-shadow:
+      0 0 5px rgba(255, 255, 255, 0.2),
+      0 0 10px rgba(255, 255, 255, 0.2),
+      0 0 15px rgba(255, 255, 255, 0.2),
+      0 0 25px rgba(255, 255, 255, 0.2);
+
+    &&:hover {
+      text-shadow:
+        0 0 5px rgba(255, 255, 255, 0.4),
+        0 0 10px rgba(255, 255, 255, 0.4),
+        0 0 15px rgba(255, 255, 255, 0.4),
+        0 0 25px rgba(255, 255, 255, 0.4);
+    }
+  }
+  img {
+    width: 128px;
+  }
+
+  #hola {
+    height: 128px;
+  }
+</style>
