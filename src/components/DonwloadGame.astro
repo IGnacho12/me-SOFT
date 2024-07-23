@@ -11,7 +11,7 @@ const { img, href, description} = Astro.props;
   <img src={img} alt="img" />
 
   <div class="flex flex-col justify-between w-full h-full ml-6" id="hola">
-    <a download href={href}><slot /></a>
+    <a download href={href} target="_blank"><slot /></a>
     <p class="mb-2">
       {description}
     </p>
