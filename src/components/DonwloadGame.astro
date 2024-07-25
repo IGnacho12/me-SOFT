@@ -7,12 +7,12 @@ interface Props {
 const { img, href, description} = Astro.props;
 ---
 
-<div class="flex flex-row items-cente mb-12">
+<div class="flex flex-col md:flex-row items-center mb-12">
   <img src={img} alt="img" />
 
   <div class="flex flex-col justify-between w-full h-full ml-6" id="hola">
     <a download href={href} target="_blank"><slot /></a>
-    <p class="mb-2">
+    <p class="md:mb-2 mb-12 ">
       {description}
     </p>
   </div>
@@ -50,4 +50,8 @@ const { img, href, description} = Astro.props;
   #hola {
     height: 128px;
   }
+
+  /* Responsive */
+
+
 </style>

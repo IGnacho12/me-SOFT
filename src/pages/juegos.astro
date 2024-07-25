@@ -6,7 +6,9 @@ import DonwloadGame from "../components/DonwloadGame.astro";
 <Layout title="Juegos Gratis 🎮">
   <main class="flex flex-col">
     <h1><span>Juegos</span></h1>
-    <p class="text-2xl self-center mb-16">¡Juegos de pago, gratuitos y seguros!</p>
+    <p class="text-2xl self-center mb-16">
+      ¡Juegos de pago, gratuitos y seguros!
+    </p>
     
     <DonwloadGame
       img="games/cupheadLogo.webp"
@@ -16,24 +18,23 @@ import DonwloadGame from "../components/DonwloadGame.astro";
     >
 
     <DonwloadGame
+    img="games/brutalDoomLogo.webp"
+    href="Old Doom"
+    description="Doom es un videojuego de disparos en primera persona desarrollado y publicado por id Software"
+    >Old Doom</DonwloadGame
+    >
+    <DonwloadGame
+    img="games/kratosLogo.webp"
+    href="kratos"
+    description="Ghost of Sparta es un videojuego de acción-aventura en tercera persona desarrollado por Ready at Dawn Studios y SCE Santa Monica Studio, puedes jugar este juego con la iso en el programa 'ppsspp'"
+    >Ghost Of Sparta "ISO"</DonwloadGame
+    >
+    <DonwloadGame
       img="games/hormigasLogo.webp"
       href="https://mega.nz/file/GNU1CbYb#hRNBPmSVC7InpGCYqxE6HE48aiHTL0ajRw7ZWvcN8BI"
       description="Empires of the Undergrowth es un juego de gestión de colonias de hormigas, con un estilo de estrategia única en tiempo real"
       >Empires of the Undergrowth</DonwloadGame
     >
-    <DonwloadGame
-      img="games/brutalDoomLogo.webp"
-      href="Old Doom"
-      description="Doom es un videojuego de disparos en primera persona desarrollado y publicado por id Software"
-      >Old Doom</DonwloadGame
-    >
-    <DonwloadGame
-      img="games/kratosLogo.webp"
-      href="kratos"
-      description="Ghost of Sparta es un videojuego de acción-aventura en tercera persona desarrollado por Ready at Dawn Studios y SCE Santa Monica Studio, puedes jugar este juego con la iso en el programa 'ppsspp'"
-      >Ghost Of Sparta "ISO"</DonwloadGame
-    >
-
   </main>
 </Layout>
 
@@ -47,4 +48,6 @@ import DonwloadGame from "../components/DonwloadGame.astro";
     font-size: 20px;
     line-height: 1.6;
   }
+
+  /* Estilos para móvil */
 </style>
